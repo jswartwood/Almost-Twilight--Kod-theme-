@@ -1,0 +1,100 @@
+/*
+ * This is the default style of Kod. If you wish to modify this to your liking,
+ * make a copy and put it in ~/.kod/mystyle.css then tell Kod where to find it
+ * by setting a configuration key:
+ *
+ *  $ defaults write se.hunch.kod style/url ~/.kod/mystyle.css
+ *
+ * You might need to restart Kod for changes to take effect. Then, simply open
+ * your ~/.kod/mystyle.css in Kod -- when edited and saved Kod will
+ * automatically reload the style, thus you see the effect of your alterations.
+ */
+body {
+  font: normal 14px/1.2 Monaco, monospace;
+  background-color: #141414;
+  color: #F8F8F8;
+}
+
+/* color of the caret and selection range */
+caret { color: #A7A7A7; }
+selection { background-color: rgba(221, 240, 255, 0.13); }
+
+/* the color for context lines (when specified with line ranges) */
+metaruler {
+  color: #666;
+  background: #333;
+  border-right: 2px solid #444;
+  font-size: 12px;
+}
+
+keyword { color: #E0C589; }
+type { color: #AC885B; }
+usertype { color: #CAC059; }
+classname { color: #eb7962; }
+string { color: #8F9D6A; }
+specialchar { color: #F9EE98; }
+regexp { color: #E9C062; }
+comment { color: #5F5A60; font-style: italic; }
+number { color: #9B859D; }
+preproc { color: #494949; }
+symbol { color: #A19DBF; }
+function { color: #DAD085; }
+cbracket { color: #ddd; }
+todo { color: #946B57; font-weight: bold; }
+
+/* Internet related */
+url {
+  color: #77B5FF; text-decoration: underline;
+  cursor: pointer;
+}
+
+/* other elements for ChangeLog and Log files */
+date { color: #F09C9F; font-weight: bold; }
+time,
+file { color: #A78AB0; font-weight: bold; }
+ip,
+name { color: #8CB194; }
+
+/* for Prolog, Perl, lang */
+constant { color: #CF6A4C; }
+variable { color: #7587A6; }
+italics { text-decoration: underline; font-style: italic; }
+bold { color: #fff; font-weight: bold; }
+
+/* for LaTeX, markdown, etc */
+underline { color: #3C7E5B; text-decoration: underline; }
+fixed { color: #bbeecc; background-color: #2c2c2c; }
+argument,
+optionalargument { color: #9194BB; }
+math { color: orange; }
+bibtex { color: #8D86EE; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { color: #CF6A4C; }
+ul,
+ol { color: #F9EE98; }
+
+/* for diffs */
+oldfile { color: #F8F8F8; background-color: #420E09; }
+newfile { color: #F8F8F8; background-color: #253B22; }
+difflines { color: #F8F8F8; background-color: #4A410D; }
+
+/* for css */
+selector { color: #9B703F; }
+property { color: #C5AF75; }
+value { color: #F9EE98; }
+
+/* for Oz, Erlang, etc */
+atom { color: orange; }
+meta { font-style: italic; }
+
+/* NOT LISTED */
+entity { color: #9B703F; }
+storage { color: #F9EE98; }
+support { color: #9B859D; }
+invalid.deprecated { color: #D2A8A1; font-style: italic; text-decoration: underline; }
+invalid.illegal { color: #F8F8F8; background-color: rgba(221, 240, 255, 0.75); }
+

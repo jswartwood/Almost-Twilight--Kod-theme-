@@ -1,0 +1,9 @@
+This is meant as a rough port of the Twilight theme for the Kod editor.  Any improvements are welcome; there isn't much documentation on syntax styling in Kod.
+
+To install:
+mkdir ~/.kod
+mkdir ~/.kod/styles
+cp almost_twilight.css ~/.kod/styles/
+defaults write se.hunch.kod style/url "~/.kod/styles/almost_twilight.css"
+
+Enjoy.
